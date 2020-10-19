@@ -1,0 +1,27 @@
+{
+    "name": "sudo/alepay",
+    "description": "Alepay",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "NDT",
+            "email": "dtruong245@gmail.com"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Alepay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Alepay\\Providers\\AlepayServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
