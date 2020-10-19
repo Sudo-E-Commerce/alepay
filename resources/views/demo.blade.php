@@ -11,8 +11,8 @@
     <div class="pt-4"></div>
     <div class="container">
         <h1>Demo thanh toán alepay</h1>
-        <p class="text-muted">Link action - route('web.alepay') == {{ route('web.alepay') }}, method="POST"</p>
-        <form action="{{ route('web.alepay') }}" method="POST" class="form">
+        <p class="text-muted">Link action - route('web.alepay') == {{ route('app.alepay') }}, method="POST"</p>
+        <form action="{{ route('app.alepay') }}" method="POST" class="form">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
