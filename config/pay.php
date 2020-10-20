@@ -8,7 +8,7 @@ return [
         
         'checksumKey' => 'GPQ4PSjeiiDsIzqBdzeWFegOfPdsIu',
     
-        'callbackUrl' => 'https://localhost:8000/ket-qua-alepay',
+        'callbackUrl' => 'http://localhost:8000/ket-qua-alepay',
         
         // Môi trường hoạt động: dev, test, live
         'env' => 'test'

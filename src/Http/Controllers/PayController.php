@@ -123,7 +123,7 @@ class PayController
 
     public function onepayResult(Request $request)
     {
-        dd($request->all());
-        return view('Pay::onepay_result');
+        $data = $request->all();
+        return view('Pay::onepay_result',compact('data'));
     }
 }
