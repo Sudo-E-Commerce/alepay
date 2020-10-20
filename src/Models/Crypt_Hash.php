@@ -1,6 +1,6 @@
 <?php
 
-namespace Sudo\Alepay\Models;
+namespace Sudo\Pay\Models;
 
 /**
  * Pure-PHP implementations of keyed-hash message authentication codes (HMACs) and various cryptographic hashing functions.

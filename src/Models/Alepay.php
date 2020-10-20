@@ -1,7 +1,7 @@
 <?php
 
-namespace Sudo\Alepay\Models;
-use Sudo\Alepay\Models\AlepayUtils;
+namespace Sudo\Pay\Models;
+use Sudo\Pay\Models\AlepayUtils;
 
 class Alepay {
 

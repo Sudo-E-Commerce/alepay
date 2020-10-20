@@ -1,8 +1,8 @@
 <?php
 
-namespace Sudo\Alepay\Models;
+namespace Sudo\Pay\Models;
 
-use Sudo\Alepay\Models\Math_BigInteger;
+use Sudo\Pay\Models\Math_BigInteger;
 
 /*
  * @category  Crypt

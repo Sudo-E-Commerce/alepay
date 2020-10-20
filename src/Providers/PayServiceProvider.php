@@ -1,17 +1,17 @@
 <?php
 
-namespace Sudo\Alepay\Providers;
+namespace Sudo\Pay\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use File;
-class AlepayServiceProvider extends ServiceProvider
+class PayServiceProvider extends ServiceProvider
 {
     /**
      * Register config file here
      * alias => path
      */
     private $configFile = [
-        'alepay' => 'alepay.php'
+        'pay' => 'pay.php'
     ];
 
     /**
@@ -42,7 +42,7 @@ class AlepayServiceProvider extends ServiceProvider
 
 	private function registerModule() {
 		$modulePath = __DIR__.'/../../';
-        $moduleName = 'Alepay';
+        $moduleName = 'Pay';
 
         // boot route
         if (File::exists($modulePath."routes/routes.php")) {
@@ -80,16 +80,16 @@ class AlepayServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $assets = [
-                __DIR__.'/../../resources/assets' => public_path('assets/alepay'),
+                __DIR__.'/../../resources/assets' => public_path('assets/pay'),
             ];
             $config = [
                 __DIR__.'/../../config' => config_path(),
             ];
             $all = array_merge($assets, $config);
             // Chạy riêng
-            $this->publishes($all, 'sudo/alepay');
-            $this->publishes($assets, 'sudo/alepay/assets');
-            $this->publishes($config, 'sudo/alepay/config');
+            $this->publishes($all, 'sudo/pay');
+            $this->publishes($assets, 'sudo/pay/assets');
+            $this->publishes($config, 'sudo/pay/config');
         }
     }
 

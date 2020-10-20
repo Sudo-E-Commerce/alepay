@@ -1,6 +1,6 @@
 {
-    "name": "sudo/alepay",
-    "description": "Alepay",
+    "name": "sudo/pay",
+    "description": "Tích hợp thanh toán onepay và alepay",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
@@ -13,13 +13,13 @@
     
     "autoload": {
         "psr-4": {
-            "Sudo\\Alepay\\": "src/"
+            "Sudo\\Pay\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Sudo\\Alepay\\Providers\\AlepayServiceProvider"
+                "Sudo\\Pay\\Providers\\PayServiceProvider"
             ],
             "aliases": {}
         }

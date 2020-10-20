@@ -1,6 +1,6 @@
 <?php
 
-namespace Sudo\Alepay\Models;
+namespace Sudo\Pay\Models;
 
 /**
  * Pure-PHP arbitrary precision integer arithmetic library.

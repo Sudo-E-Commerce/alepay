@@ -1,7 +1,7 @@
 <?php
 
-namespace Sudo\Alepay\Models;
-use Sudo\Alepay\Models\Crypt_RSA;
+namespace Sudo\Pay\Models;
+use Sudo\Pay\Models\Crypt_RSA;
 
 class AlepayUtils {
     function encryptData($data, $publicKey) {
